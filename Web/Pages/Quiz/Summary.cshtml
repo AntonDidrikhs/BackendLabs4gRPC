@@ -1,0 +1,11 @@
+﻿@page "{quizId}/{userId}"
+@model Web.Pages.Summary
+@{
+    ViewData["Title"] = "Summary";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<H3>@ViewData["Title"]</H3>
+<p>Your score is @Model.CorrectAnswerCount</p>
+<form method="post"> 
+    <button type="submit">Generuj certyfikat do pdf</button>
+</form>
